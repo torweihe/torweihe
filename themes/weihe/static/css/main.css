@@ -1,0 +1,223 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+@font-face {
+  font-family: 'Le Rosart';
+  src: url('/LeRosart-TextRegular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Le Rosart';
+  src: url('/LeRosart-TextRegularItalic.woff2') format('woff2');
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Le Rosart';
+  src: url('/LeRosart-TextBold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Le Rosart';
+  src: url('/LeRosart-TextBoldItalic.woff2') format('woff2');
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Le Rosart Display';
+  src: url('/LeRosart-DisplayRegular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Le Rosart Display';
+  src: url('/LeRosart-DisplayRegularItalic.woff2') format('woff2');
+  font-weight: 400;
+  font-style: italic;
+}
+
+:root {
+  --serif: 'Le Rosart', Georgia, serif;
+  --display: 'Le Rosart Display', Georgia, serif;
+  --text: #363737;
+  --muted: #757575;
+  --rule: #e8ddd0;
+  --bg: #fff7ed;
+  --gold: #d4b87b;
+}
+
+body {
+  font-family: var(--serif);
+  background: var(--bg);
+  color: var(--text);
+  font-size: 19px;
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+  font-variant-numeric: oldstyle-nums;
+}
+
+.site-wrap {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+header {
+  padding: 3.5rem 0 2.5rem;
+  border-bottom: 0.5px solid var(--rule);
+  margin-bottom: 2.5rem;
+}
+
+.site-name {
+  font-size: 54px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  font-variant-caps: small-caps;
+  color: var(--muted);
+  margin-bottom: 0.3rem;
+}
+
+nav {
+  display: flex;
+  gap: 2rem;
+  margin-top: 0.8rem;
+}
+
+nav a {
+  font-size: 30px;
+  font-weight: 450;
+  color: var(--muted);
+  text-decoration: none;
+  letter-spacing: 0.04em;
+  font-variant-caps: small-caps;
+  transition: color 0.15s;
+}
+
+@media (max-width: 600px) {
+  nav {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  nav a {
+    font-size: 25px;
+    font-weight: 500;
+  }
+}
+
+nav a:hover { color: var(--text); }
+
+h1 {
+  font-size: 2.2rem;
+  margin-top: 4rem;
+  font-weight: 400;
+  font-style: italic;
+  line-height: 1.2;
+  margin-bottom: 1.8rem;
+  
+}
+h2 {
+  font-size: 28px;
+  font-weight: 400;
+  letter-spacing: 0.14em;
+  font-variant-caps: small-caps;
+  color: var(--muted);
+  margin: 2.5rem 0 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 0.5px solid var(--rule);
+}
+
+p {
+  font-size: 25px;
+  line-height: 1.3;
+  margin-bottom: 1.1rem;
+  font-weight: 400;
+}
+
+.lede {
+  font-size: 32;
+  line-height: 1.55;
+  font-style: italic;
+  margin-bottom: 1.8rem;
+}
+
+.cv-row {
+  display: grid;
+  grid-template-columns: 80px 1fr;
+  gap: 0 1.5rem;
+  margin-bottom: 1.1rem;
+  font-size: 23px;
+}
+
+.cv-year {
+  color: var(--muted);
+  font-size: 22px;
+  padding-top: 0.05rem;
+}
+
+.cv-item { line-height: 1.5; }
+.cv-item em { font-style: italic; color: var(--muted); font-size: 20px; }
+
+.pub-item {
+  margin-bottom: 1.4rem;
+  font-size: 23px;
+  line-height: 1.55;
+  padding-left: 1.2rem;
+  border-left: 1.5px solid var(--rule);
+}
+
+.pub-item .pub-title { font-style: italic; font-weight: 500}
+.pub-item .pub-meta { color: var(--muted); font-size: 22px; display: block; margin-top: 0.2rem; }
+
+.blog-list { list-style: none; }
+
+.blog-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 0.9rem 0;
+  border-bottom: 0.5px solid var(--rule);
+  gap: 1rem;
+}
+
+.blog-item:first-child { border-top: 0.5px solid var(--rule); }
+
+.blog-item .blog-title {
+  font-size: 24px;
+  color: var(--text);
+  text-decoration: none;
+  transition: color 0.15s;
+  font-variant-caps: normal;
+}
+
+.blog-item:hover .blog-title { color: var(--muted); }
+
+.blog-item .blog-date {
+  font-size: 21px;
+  color: var(--muted);
+  white-space: nowrap;
+  letter-spacing: 0.04em;
+}
+
+.blog-lang {
+  font-size: 11px;
+  color: var(--muted);
+  letter-spacing: 0.1em;
+  font-variant-caps: small-caps;
+  margin-left: 0.5rem;
+  opacity: 0.7;
+}
+a {
+  color: var(--gold);
+  text-decoration: none;
+}
+
+a:hover {
+  color: #ceae68;
+}

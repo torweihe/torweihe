@@ -1,0 +1,9 @@
+baseURL = 'https://torweihe.fo/'
+locale = 'en-us'
+title = 'Tor Marni Weihe'
+theme = "weihe"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
