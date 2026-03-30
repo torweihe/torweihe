@@ -1,5 +1,5 @@
 {{ define "main" }}
-<article class="essay">
+<article class="essay" lang="en"></article>
   <h1 class="essay-title">{{ .Title }}</h1>
 {{ with .Params.subtitle }}<p class="essay-subtitle">{{ . }}</p>{{ end }}
   <p class="essay-meta" style="margin-top: 2rem;">{{ .Params.author }} <span style="color: var(--rule); margin: 0 0.6rem;">|</span> {{ .Date.Format "2 January 2006" }}</p>
@@ -12,7 +12,7 @@
 .essay-title {
   font-size: 3rem;
   font-weight: 700;
-  font-style: italic;
+  font-style: normal; 
   line-height: 1.2;
   margin-top: 4rem;
   margin-bottom: 0.8rem;
@@ -39,6 +39,7 @@
   margin-bottom: 0;
   line-height: 1.4;
   text-indent: 1.5em;
+  hyphens: auto;
 }
 
 .essay-body p:first-of-type,
@@ -62,7 +63,7 @@
   color: var(--text) !important;
   border-bottom: none !important;
   padding-bottom: 0 !important;
-  margin: 3rem 0 1.2rem !important;
+  margin: 3rem 0 0.2rem !important;
 }
 
 .essay-body blockquote {
@@ -107,8 +108,8 @@
 .essay-body .footnotes::before {
   content: "Notes";
   display: block;
-  font-size: 25px;
-  font-weight: 400;
+  font-size: 30px;
+  font-weight: 700;
   font-variant-caps: small-caps;
   letter-spacing: 0.1em;
   color: var(--muted);
@@ -123,6 +124,7 @@
 
 .essay-body .footnotes li {
   font-size: 15px;
+  font-weight: 700;
   line-height: 1.5;
   color: var(--muted);
   margin-bottom: 1.2rem;

@@ -42,8 +42,50 @@
   font-style: italic;
 }
 
+@font-face {
+  font-family: 'Messina Serif';
+  src: url('/MessinaSerif-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Messina Serif';
+  src: url('/MessinaSerif-RegularItalic.woff2') format('woff2');
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Messina Serif';
+  src: url('/MessinaSerif-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Messina Serif';
+  src: url('/MessinaSerif-BoldItalic.woff2') format('woff2');
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Messina Serif';
+  src: url('/MessinaSerif-Light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Messina Serif';
+  src: url('/MessinaSerif-LightItalic.woff2') format('woff2');
+  font-weight: 300;
+  font-style: italic;
+}
+
 :root {
-  --serif: 'Le Rosart', Georgia, serif;
+  --serif: 'Messina Serif', Georgia, serif;
   --display: 'Le Rosart Display', Georgia, serif;
   --text: #363737;
   --muted: #757575;
@@ -54,12 +96,17 @@
 
 body {
   font-family: var(--serif);
+  font-feature-settings: "smcp" 1;
   background: var(--bg);
   color: var(--text);
   font-size: 19px;
   line-height: 1.65;
   -webkit-font-smoothing: antialiased;
   font-variant-numeric: oldstyle-nums;
+}
+
+.essay-body p {
+  text-align: justify;
 }
 
 .site-wrap {
@@ -149,7 +196,7 @@ p {
 
 .cv-row {
   display: grid;
-  grid-template-columns: 80px 1fr;
+  grid-template-columns: 120px 1fr;
   gap: 0 1.5rem;
   margin-bottom: 1.1rem;
   font-size: 23px;
@@ -164,12 +211,28 @@ p {
 .cv-item { line-height: 1.5; }
 .cv-item em { font-style: italic; color: var(--muted); font-size: 20px; }
 
+.cv-thesis {
+  font-size: 22px;
+  font-variant-caps: small-caps;
+  letter-spacing: 0.03em;
+}
+
 .pub-item {
   margin-bottom: 1.4rem;
   font-size: 23px;
   line-height: 1.55;
   padding-left: 1.2rem;
   border-left: 1.5px solid var(--rule);
+}
+
+.pub-title a {
+  color: var(--text);
+ text-decoration: none;
+  text-decoration-color: var(--rule);
+}
+
+.pub-title a:hover {
+  color: var(--gold);
 }
 
 .pub-item .pub-title { font-style: italic; font-weight: 500}
