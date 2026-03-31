@@ -1,6 +1,6 @@
 ---
 title: "Vit mugu ikki lata fremmandaóttan fáa fastatøkur í okkum"
-subtitle: "Uppskot til grundsúlur undir einum pragmatiskum útlendingapolitikki"
+subtitle: "Uppskot til fimm grundsúlur undir einum pragmatiskum føroyskum útlendingapolitikki"
 date: 2026-03-30
 author: "Tór Marni Weihe"
 draft: false
