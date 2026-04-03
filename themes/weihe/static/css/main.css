@@ -1,48 +1,6 @@
 * { box-sizing: border-box; margin: 0; padding: 0; }
 
 @font-face {
-  font-family: 'Le Rosart';
-  src: url('/LeRosart-TextRegular.woff2') format('woff2');
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Le Rosart';
-  src: url('/LeRosart-TextRegularItalic.woff2') format('woff2');
-  font-weight: 400;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: 'Le Rosart';
-  src: url('/LeRosart-TextBold.woff2') format('woff2');
-  font-weight: 700;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Le Rosart';
-  src: url('/LeRosart-TextBoldItalic.woff2') format('woff2');
-  font-weight: 700;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: 'Le Rosart Display';
-  src: url('/LeRosart-DisplayRegular.woff2') format('woff2');
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Le Rosart Display';
-  src: url('/LeRosart-DisplayRegularItalic.woff2') format('woff2');
-  font-weight: 400;
-  font-style: italic;
-}
-
-@font-face {
   font-family: 'Messina Serif';
   src: url('/MessinaSerif-Regular.woff2') format('woff2');
   font-weight: 400;
@@ -120,7 +78,7 @@ header {
 .site-name {
   font-size: 54px;
   font-weight: 700;
-  letter-spacing: 0.14em;
+  letter-spacing: 0.08em;
   font-variant-caps: small-caps;
   color: var(--muted);
   margin-bottom: 0.3rem;
@@ -134,10 +92,10 @@ nav {
 
 nav a {
   font-size: 30px;
-  font-weight: 450;
+  font-weight: 500;
   color: var(--muted);
   text-decoration: none;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.02em;
   font-variant-caps: small-caps;
   transition: color 0.15s;
 }

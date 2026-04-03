@@ -4,7 +4,7 @@ subtitle: "Uppskot til fimm grundsúlur undir einum pragmatiskum føroyskum útl
 date: 2026-03-30
 language: "fo"
 author: "Tór Marni Weihe"
-draft: false
+draft: true
 ---
 
 Lat meg byrja við at staðfesta, at øll lond hava fullgóðan rætt at seta krøv til teirra, sum flyta til landið. Í grundini er tað soleiðis, at ongin rættur at ferðast inn í onnur lond finst í dag. Heimsyvirlýsingin um mannarættindi frá 1948 staðfestir, at øll hava rætt til at fara úr landinum, tey eru í – og hóast hetta kann ljóða løgið, so er vert at minnast til, at tað enn á okkara døgum eru lond, ið ikki virða hendan rættin. Norðurkoreanarar, ið fara úr landinum, gera hetta við fullari vissu fyri, at hetta fær avleiðingar fyri tey avvarðandi, ið vera verandi eftir í landinum. Eiheldur konventiónin um borgarlig og politisk rættindi frá x sigur nakað um rættin at ferðast inn í onnur lond. Hetta poengið skal tó ikki yvirmetast, tí at rætturin til at flýggja úr einum landi er púra innihaldsleysur, um ikki tað ber til at flýggja onkrastaðni. Tað sum eg bara vil vísa á, er, at tað er heilt legalt at seta rímilig krøv til tey, sum ætla sær at flyta inn í títt land. Tað ber til at seta krøv, og ongin rættur í altjóða lóg gevur nøkrum krav uppá kunna ferðast inn í landi. Tað er vert at minnast til í hesum orðaskiftinum.
