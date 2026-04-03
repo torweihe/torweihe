@@ -11,16 +11,19 @@
   <header>
     <div class="site-name">Tór Marni Weihe</div>
     <nav>
-      <a href="/">About</a>
-      <a href="/cv/">CV</a>
-      <a href="/publications/">Publications</a>
-      <a href="/writing/">Writing</a>
-      <a href="/contact/">Contact</a>
-    </nav>
+  <a href="/" class="{{ if .IsHome }}active{{ end }}">About</a>
+  <a href="/cv/" class="{{ if eq .Section "cv" }}active{{ end }}">CV</a>
+  <a href="/publications/" class="{{ if eq .Section "publications" }}active{{ end }}">Publications</a>
+  <a href="/writing/" class="{{ if or (eq .Section "writing") (eq .Section "essays") }}active{{ end }}">Writing</a>
+  <a href="/contact/" class="{{ if eq .Section "contact" }}active{{ end }}">Contact</a>
+</nav>
   </header>
   <main>
     {{ block "main" . }}{{ end }}
   </main>
+<footer>
+    <p>© 2026 Tór Marni Weihe</p>
+  </footer>
 </div>
 </body>
 </html>
