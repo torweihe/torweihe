@@ -1,9 +1,6 @@
 {{ define "main" }}
 <p style="font-size:25.5px; color: var(--muted); font-style: italic; margin-bottom:3.5rem;">Essays, commentary, and occasional longer pieces — in Faroese and English mostly.</p>
 <ul class="blog-list">
-  {{ $writing := .Pages }}
-  {{ $essays := (site.GetPage "/essays").Pages }}
-  {{ $all := $writing | append $essays }}
   {{ range .Pages.ByDate.Reverse }}
   <li class="blog-item">
     <a class="blog-title" href="{{ .RelPermalink }}">{{ .Title }}</a>
