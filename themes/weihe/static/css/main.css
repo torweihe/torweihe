@@ -106,7 +106,7 @@ body {
 }
 
 .site-wrap {
-  max-width: 1000px;
+  max-width: 850px;
   margin: 0 auto;
   padding: 0 2rem;
 }
@@ -157,6 +157,7 @@ nav a {
 nav a:hover { color: var(--text); }
 
 nav a.active {
+  color: var(--gold);
   font-weight: 700;
 }
 
@@ -238,7 +239,11 @@ p {
 .pub-item .pub-title { font-style: italic; font-weight: 500}
 .pub-item .pub-meta { color: var(--muted); font-size: 22px; display: block; margin-top: 0.2rem; }
 
-.blog-list { list-style: none; }
+.blog-list { 
+  list-style: none;
+  padding-left: 0;
+  margin-left: 0;
+}
 
 .blog-item {
   display: flex;
@@ -247,6 +252,7 @@ p {
   padding: 0.9rem 0;
   border-bottom: 0.5px solid var(--rule);
   gap: 1rem;
+  text-indent: 0;
 }
 
 .blog-item:first-child { border-top: 0.5px solid var(--rule); }
@@ -289,17 +295,35 @@ footer {
   margin-top: 4rem;
   padding: 2rem 0 3rem;
   border-top: 0.5px solid var(--rule);
-  font-size: 10px;
+  font-size: 10px !important;
   color: var(--muted);
 }
 
-ol, ul {
-  padding-left: 2rem;
+footer p {
+  font-size: 16px !important;
+}
+
+ol {
+  padding-left: 0;
+  list-style: none;
+  counter-reset: list-counter;
   margin: 1.5rem 0;
 }
 
-ol li, ul li {
-  font-size: 21px;
+ol li {
+  counter-increment: list-counter;
+  padding-left: 2.5rem;
+  position: relative;
+  font-size: 23px;
   line-height: 1.6;
   margin-bottom: 0.4rem;
 }
+
+ol li::before {
+  content: counter(list-counter) ".";
+  position: absolute;
+  left: 0;
+  font-variant-numeric: oldstyle-nums;
+  font-feature-settings: "onum" 1;
+}
+

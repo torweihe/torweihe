@@ -2,7 +2,7 @@
 title: "Vit mugu ikki lata fremmandaóttan fáa fastatøkur í okkum"
 subtitle: "Uppskot til fimm grundsúlur undir einum pragmatiskum føroyskum útlendingapolitikki"
 date: 2026-03-30
-lang: "fo"
+language: "fo"
 author: "Tór Marni Weihe"
 draft: false
 ---
@@ -11,7 +11,7 @@ Lat meg byrja við at staðfesta, at øll lond hava fullgóðan rætt at seta kr
 
 Lat meg eisini gera greitt beinanvegin, at stúranin um hvussu sambæriligar ymiskar heims- og lívsáskoðanar eru, skal takast í álvara. Hon kemur ikki av ongum. Har eru stórir og ikki-triviellir mentanarligir og sosialir munir á okkum í vesturheiminum, og teimum, sum búgva í t.d. Miðeystri ella í suðurasia. Munirnir eru sjálvandi ikki galdandi fyri øll – tað ber væl til at búgva í Miðeystrið og hava demokratiskan og liberalan hugsunarhátt, men meirilutasjónarmiðini eru helst rættiliga ólík teimum, vit kenna aftur á okkara leiðum.
 
-Tað er heldur ongin ivi um, at samanhangsmegin í einum samfelag kann verða ávirkað, um ov nógvar ósambæriligar mentanir koma í konflikt við hvørja aðra. Sjálvandi ber tað til at byggja eitt multinational samfelag upp, tað eru tað nógv dømi um, men tað er ikki fremmandahatskt ella rasistiskt at ásanna, at samanhangsmegi hevur týdning í einum samfelag, og at multikulturalisma kann vera eina avbjóðing, um spenningarnir millum bólkar gerast ov stórir.
+>Tað er heldur ongin ivi um, at samanhangsmegin í einum samfelag kann verða ávirkað, um ov nógvar ósambæriligar mentanir koma í konflikt við hvørja aðra. Sjálvandi ber tað til at byggja eitt multinational samfelag upp, tað eru tað nógv dømi um, men tað er ikki fremmandahatskt ella rasistiskt at ásanna, at samanhangsmegi hevur týdning í einum samfelag, og at multikulturalisma kann vera eina avbjóðing, um spenningarnir millum bólkar gerast ov stórir.
 
 Tá eg havi sagt hetta, so vil eg kortini halda fast við, at í hesum tíðum er ein veruligur vandi fyri, at vit lata fremmandaótta ávirka okkum ov nógv. Kenslubornar avgerðir eru ofta ikki serliga skilagóðar, tí at kenslurnar ávirka okkara evni at taka rationellar avgerðir. Hvør hevur ikki uppliva tað, at ein í illsinni kemur til at siga okkurt, sum var betur ósagt? At gera politikk við støði í kenslum kann gerast hættisligt, tí at politikkur skal helst gerast við støði í sannroyndum.
 
@@ -25,7 +25,7 @@ Lat meg sum dømi seta fram fimm punkt, sum eg hugsi, at næstan allir føroying
 4. Her er punkt 4
 5. Her er punkt 5
 
-og soleiðis seta órímilig krøv ella skjóta upp órímiligar x. Eitt er, at hetta kann koma at fáa avleiðingar fyri okkum, vit kanska ikki geva okkum fær um – her tað, sum Vinnuhúsið hevur skrivað og tað hjá Johnny í Grótinum – kanska eisini nakrar viðmerkingar um hetta, at fallandi burðartalið í FO og vesturheiminum generelt merkir, at í komandi tíðum fer kappingin um arbeiðsmegi at harðna, og hetta kann koma at fáa ávirkan á okkum í FO. Ein orsøk til, at vit longu í dag hava fleiri útlendingar er júst hetta, at vit ikki sjálvi megna at manna tey størv, sum útlendingarnir, ið koma hendanvegin, verða settir í.
+Soleiðis ber til at seta órímilig krøv ella skjóta upp órímiligar x. Eitt er, at hetta kann koma at fáa avleiðingar fyri okkum, vit kanska ikki geva okkum fær um – her tað, sum Vinnuhúsið hevur skrivað og tað hjá Johnny í Grótinum – kanska eisini nakrar viðmerkingar um hetta, at fallandi burðartalið í FO og vesturheiminum generelt merkir, at í komandi tíðum fer kappingin um arbeiðsmegi at harðna, og hetta kann koma at fáa ávirkan á okkum í FO. Ein orsøk til, at vit longu í dag hava fleiri útlendingar er júst hetta, at vit ikki sjálvi megna at manna tey størv, sum útlendingarnir, ið koma hendanvegin, verða settir í.
 
 Framyvir kann avbjóðingin gerast enn størri, tí at x og y og z her.
 

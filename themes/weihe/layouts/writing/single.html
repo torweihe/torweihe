@@ -1,7 +1,48 @@
 {{ define "main" }}
-<article lang="{{ .Params.lang | default "en" }}">
-<h1 style="font-size: 2.4rem; font-weight: 700; font-style: italic; line-height: 1.2; margin-bottom: 1rem;">{{ .Title }}</h1>
-<p style="font-size: 20px; color: var(--muted); margin-bottom: 2.5rem; font-variant-caps: small-caps; letter-spacing: 0.05em;">{{ .Params.author }} <span style="color: var(--rule); margin: 0 0.6rem;">|</span> {{ .Date.Format "2 January 2006" }}</p>
+{{ $lang := .Params.language | default "en" }}
+<article lang="{{ $lang }}">
+<h1 style="font-size: 3rem; font-weight: 700; font-style: normal; line-height: 1.2; margin-top: 4rem; margin-bottom: 0.8rem;">{{ .Title }}</h1>
+{{ with .Params.subtitle }}<p class="essay-subtitle">{{ . }}</p>{{ end }}
+<p class="essay-meta">{{ .Params.author }} <span style="color: var(--rule); margin: 0 0.6rem;">|</span> {{ .Date.Format "2 January 2006" }}</p>
+<div class="essay-body">
 {{ .Content }}
+</div>
 </article>
+<style>
+.essay-subtitle { font-size: 2rem; font-weight: 400; color: var(--muted); margin-top: 0.3rem; margin-bottom: 0.5rem; text-indent: 0; }
+.essay-meta { font-size: 24px; color: var(--muted); font-variant-caps: small-caps; letter-spacing: 0.05em; margin-bottom: 3rem; margin-top: 2rem; }
+.essay-body p { margin-bottom: 1.2rem; line-height: 1.4; hyphens: auto; text-align: left; word-spacing: -0.02em; letter-spacing: 0,1em; }
+.essay-body p:first-of-type, .essay-body h2 + p { text-indent: 0; }
+.essay-body h2 { font-size: 28px !important; font-weight: 700 !important; font-style: normal !important; font-variant-caps: normal !important; letter-spacing: normal !important; color: var(--text) !important; border-bottom: none !important; padding-bottom: 0 !important; margin: 3rem 0 0.2rem !important; }
+.essay-body blockquote { margin: 2rem 0 2rem 2rem; padding-left: 1.2rem; border-left: 1.5px solid var(--rule); font-style: italic; color: var(--muted); }
+.essay-body blockquote p { text-indent: 0; }
+.essay-body sup { font-size: 0.65em; font-weight: 700; color: var(--gold); font-variant-numeric: lining-nums; }
+.essay-body sup a { color: var(--gold); text-decoration: none; }
+.essay-body sup a:hover { text-decoration: underline; }
+.essay-body .footnotes { margin-top: 6rem; padding-top: 2rem; border-top: 0.5px solid var(--rule); font-variant-numeric: lining-nums; }
+.essay-body .footnotes hr { display: none; }
+.essay-body .footnotes::before { content: "Notes"; display: block; font-size: 28px; font-weight: 700; font-variant-caps: small-caps; letter-spacing: 0.1em; color: var(--muted); margin-bottom: 1.5rem; }
+.essay-body .footnotes ol { padding-left: 0; list-style: none; counter-reset: footnote-counter; }
+.essay-body .footnotes li { font-size: 14px; line-height: 1.5; color: var(--muted); margin-bottom: 1.2rem; font-variant-numeric: lining-nums; font-weight: 400; padding-left: 2rem; position: relative; counter-increment: footnote-counter; }
+.essay-body .footnotes li::before { content: counter(footnote-counter); font-weight: 700; font-variant-numeric: lining-nums; position: absolute; left: 0; }
+.essay-body .footnotes li p { text-indent: 0; margin: 0; font-size: 14px; line-height: 1.5; font-weight: 400; }
+.fn-tooltip { display: none; position: absolute; bottom: 1.4em; left: 0; width: 280px; background: #f5efe0; border: 0.5px solid var(--rule); padding: 0.7rem 0.9rem; font-size: 14px; font-weight: 400; font-style: normal; line-height: 1.5; color: var(--text); z-index: 10; pointer-events: none; }
+sup:hover .fn-tooltip { display: block; }
+</style>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const footnoteLinks = document.querySelectorAll('a[href^="#fn:"]');
+  footnoteLinks.forEach(function(link) {
+    const id = link.getAttribute('href').replace('#fn:', 'fn:');
+    const footnote = document.getElementById(id);
+    if (footnote) {
+      const tooltip = document.createElement('span');
+      tooltip.className = 'fn-tooltip';
+      tooltip.textContent = footnote.textContent.replace('↩︎', '').trim();
+      link.parentNode.style.position = 'relative';
+      link.parentNode.appendChild(tooltip);
+    }
+  });
+});
+</script>
 {{ end }}

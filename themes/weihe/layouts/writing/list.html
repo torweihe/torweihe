@@ -4,7 +4,7 @@
   {{ $writing := .Pages }}
   {{ $essays := (site.GetPage "/essays").Pages }}
   {{ $all := $writing | append $essays }}
-  {{ range $all.ByDate.Reverse }}
+  {{ range .Pages.ByDate.Reverse }}
   <li class="blog-item">
     <a class="blog-title" href="{{ .RelPermalink }}">{{ .Title }}</a>
     <span class="blog-date">{{ .Date.Format "Jan 2006" }}</span>
