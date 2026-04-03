@@ -1,5 +1,7 @@
 {{ define "main" }}
+<article lang="{{ .Params.lang | default "en" }}">
 <h1 style="font-size: 2.4rem; font-weight: 700; font-style: italic; line-height: 1.2; margin-bottom: 1rem;">{{ .Title }}</h1>
 <p style="font-size: 20px; color: var(--muted); margin-bottom: 2.5rem; font-variant-caps: small-caps; letter-spacing: 0.05em;">{{ .Params.author }} <span style="color: var(--rule); margin: 0 0.6rem;">|</span> {{ .Date.Format "2 January 2006" }}</p>
 {{ .Content }}
+</article>
 {{ end }}
