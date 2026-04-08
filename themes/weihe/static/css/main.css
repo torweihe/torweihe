@@ -1,50 +1,99 @@
 * { box-sizing: border-box; margin: 0; padding: 0; }
 
+
+/* Novela Black */
 @font-face {
-  font-family: 'Messina Serif';
-  src: url('/MessinaSerif-Regular.woff2') format('woff2');
-  font-weight: 400;
+  font-family: "Novela";
+  src: url("Novela-Black.woff2") format("woff2");
+  font-weight: 900;
   font-style: normal;
+  font-display: swap;
 }
 
+/* Novela Black Italic */
 @font-face {
-  font-family: 'Messina Serif';
-  src: url('/MessinaSerif-RegularItalic.woff2') format('woff2');
-  font-weight: 400;
+  font-family: "Novela";
+  src: url("Novela-BlackItalic.woff2") format("woff2");
+  font-weight: 900;
   font-style: italic;
+  font-display: swap;
 }
 
+/* Novela Bold */
 @font-face {
-  font-family: 'Messina Serif';
-  src: url('/MessinaSerif-Bold.woff2') format('woff2');
+  font-family: "Novela";
+  src: url("Novela-Bold.woff2") format("woff2");
   font-weight: 700;
   font-style: normal;
+  font-display: swap;
 }
 
+/* Novela Bold Italic */
 @font-face {
-  font-family: 'Messina Serif';
-  src: url('/MessinaSerif-BoldItalic.woff2') format('woff2');
+  font-family: "Novela";
+  src: url("Novela-BoldItalic.woff2") format("woff2");
   font-weight: 700;
   font-style: italic;
+  font-display: swap;
 }
 
+/* Novela Semibold */
 @font-face {
-  font-family: 'Messina Serif';
-  src: url('/MessinaSerif-Light.woff2') format('woff2');
-  font-weight: 300;
+  font-family: "Novela";
+  src: url("Novela-Semibold.woff2") format("woff2");
+  font-weight: 600;
   font-style: normal;
+  font-display: swap;
 }
 
+/* Novela Semibold Italic */
 @font-face {
-  font-family: 'Messina Serif';
-  src: url('/MessinaSerif-LightItalic.woff2') format('woff2');
-  font-weight: 300;
+  font-family: "Novela";
+  src: url("Novela-SemiboldItalic.woff2") format("woff2");
+  font-weight: 600;
   font-style: italic;
+  font-display: swap;
+}
+
+/* Novela Regular */
+@font-face {
+  font-family: "Novela";
+  src: url("Novela-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Novela Regular Italic */
+@font-face {
+  font-family: "Novela";
+  src: url("Novela-RegularItalic.woff2") format("woff2");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* Novela Display Regular */
+@font-face {
+  font-family: "Novela Display";
+  src: url("Novela-DisplayRegular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Novela Display Italic */
+@font-face {
+  font-family: "Novela Display";
+  src: url("Novela-DisplayItalic.woff2") format("woff2");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
 }
 
 :root {
-  --serif: 'Messina Serif', Georgia, serif;
-  --display: 'Le Rosart Display', Georgia, serif;
+  --serif: 'Novela', Georgia, serif;
+  --display: 'Novela Display', Georgia, serif;
   --text: #363737;
   --muted: #757575;
   --rule: #e8ddd0;
@@ -54,7 +103,6 @@
 
 body {
   font-family: var(--serif);
-  font-feature-settings: "smcp" 1;
   background: var(--bg);
   color: var(--text);
   font-size: 19px;
@@ -174,6 +222,7 @@ p {
   font-size: 22px;
   font-variant-caps: small-caps;
   letter-spacing: 0.03em;
+  color: #757575;
 }
 
 .pub-item {
