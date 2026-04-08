@@ -7,7 +7,7 @@
   src: url("Novela-Black.woff2") format("woff2");
   font-weight: 900;
   font-style: normal;
-  font-display: swap;
+  font-display: optional;
 }
 
 /* Novela Black Italic */
@@ -16,7 +16,7 @@
   src: url("Novela-BlackItalic.woff2") format("woff2");
   font-weight: 900;
   font-style: italic;
-  font-display: swap;
+  font-display: optional;
 }
 
 /* Novela Bold */
@@ -25,7 +25,7 @@
   src: url("Novela-Bold.woff2") format("woff2");
   font-weight: 700;
   font-style: normal;
-  font-display: swap;
+  font-display: optional;
 }
 
 /* Novela Bold Italic */
@@ -34,7 +34,7 @@
   src: url("Novela-BoldItalic.woff2") format("woff2");
   font-weight: 700;
   font-style: italic;
-  font-display: swap;
+  font-display: optional;
 }
 
 /* Novela Semibold */
@@ -43,7 +43,7 @@
   src: url("Novela-Semibold.woff2") format("woff2");
   font-weight: 600;
   font-style: normal;
-  font-display: swap;
+  font-display: optional;
 }
 
 /* Novela Semibold Italic */
@@ -52,7 +52,7 @@
   src: url("Novela-SemiboldItalic.woff2") format("woff2");
   font-weight: 600;
   font-style: italic;
-  font-display: swap;
+  font-display: optional;
 }
 
 /* Novela Regular */
@@ -61,7 +61,7 @@
   src: url("Novela-Regular.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
-  font-display: swap;
+  font-display: optional;
 }
 
 /* Novela Regular Italic */
@@ -70,7 +70,7 @@
   src: url("Novela-RegularItalic.woff2") format("woff2");
   font-weight: 400;
   font-style: italic;
-  font-display: swap;
+  font-display: optional;
 }
 
 /* Novela Display Regular */
@@ -79,7 +79,7 @@
   src: url("Novela-DisplayRegular.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
-  font-display: swap;
+  font-display: optional;
 }
 
 /* Novela Display Italic */
@@ -88,7 +88,7 @@
   src: url("Novela-DisplayItalic.woff2") format("woff2");
   font-weight: 400;
   font-style: italic;
-  font-display: swap;
+  font-display: optional;
 }
 
 :root {
