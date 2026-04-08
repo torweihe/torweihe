@@ -3,7 +3,7 @@
 <article lang="{{ $lang }}">
 <h1 style="font-size: 36px; font-weight: 700; font-style: normal; line-height: 1.2; margin-top: 4rem; margin-bottom: 0.8rem;">{{ .Title }}</h1>
 {{ with .Params.subtitle }}<p class="essay-subtitle">{{ . }}</p>{{ end }}
-<p class="essay-meta">{{ .Params.author }} <span style="color: var(--rule); margin: 0 0.6rem;">|</span> {{ .Date.Format "2 January 2006" }}</p>
+<p class="essay-meta"><span style="font-variant-caps: small-caps;">By</span> <em style="font-variant-caps: normal; letter-spacing: 0,02em !important;">{{ .Params.author }}</em> <span style="color: var(--rule); margin: 0 0.6rem;">|</span> {{ .Date.Format "2 January 2006" }}</p>
 <div class="essay-body">
 {{ .Content }}
 </div>
@@ -11,7 +11,7 @@
 <style>
 .essay-subtitle { font-size: 2rem; font-weight: 400; color: var(--muted); margin-top: 0.3rem; margin-bottom: 0.5rem; text-indent: 0; }
 .essay-meta { font-size: 20px; color: var(--muted); font-variant-caps: small-caps; letter-spacing: 0.05em; margin-bottom: 3rem; margin-top: 2rem; }
-.essay-body p { margin-bottom: 1.2rem; font-size: 22px !important; line-height: 1.4; hyphens: auto; text-align: left; word-spacing: -0.02em; letter-spacing: 0,1em; }
+.essay-body p { margin-bottom: 1.2rem; font-size: 23px !important; line-height: 1.35; hyphens: auto; text-align: left; word-spacing: -0.02em; letter-spacing: -0.02em }
 .essay-body p:first-of-type, .essay-body h2 + p { text-indent: 0; }
 .essay-body h2 { font-size: 24px !important; font-weight: 700 !important; font-style: normal !important; font-variant-caps: normal !important; letter-spacing: normal !important; color: var(--text) !important; border-bottom: none !important; padding-bottom: 0 !important; margin: 3rem 0 0.2rem !important; }
 .essay-body blockquote { margin: 2rem 0 2rem 2rem; padding-left: 1.2rem; border-left: 1.5px solid var(--rule); font-style: italic; color: var(--muted); }
