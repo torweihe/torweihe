@@ -1,18 +1,15 @@
 <!DOCTYPE html>
 <html lang="{{ site.Language.Locale }}">
 <head>
-  <link rel="preload" href="/Novela-Regular.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="/Novela-RegularItalic.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="/Novela-Bold.woff2" as="font" type="font/woff2" crossorigin>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta property="og:image" content="https://torweihe.fo/To_r_Marni_Weihe.png">
-<meta property="og:title" content="Tór Marni Weihe">
-<meta property="og:description" content="PhD Candidate in International Politics | University of the Faroe Islands">
-<meta property="og:url" content="https://torweihe.fo">
-  <link rel="icon" type="image/png" href="/TMW.png">
-<link rel="apple-touch-icon" href="/TMW.png">
   <title>{{ if .Title }}{{ .Title }} — {{ end }}Tór Marni Weihe</title>
+  <meta property="og:image" content="https://torweihe.fo/To_r_Marni_Weihe.png">
+  <meta property="og:title" content="Tór Marni Weihe">
+  <meta property="og:description" content="PhD Candidate in International Politics | University of the Faroe Islands">
+  <meta property="og:url" content="https://torweihe.fo">
+  <link rel="icon" type="image/png" href="/TMW.png">
+  <link rel="apple-touch-icon" href="/TMW.png">
   <link rel="stylesheet" href="{{ "css/main.css" | relURL }}">
 </head>
 <body>
@@ -20,17 +17,17 @@
   <header>
     <div class="site-name">Tór Marni Weihe</div>
     <nav>
-  <a href="/" class="{{ if .IsHome }}active{{ end }}">About</a>
-  <a href="/cv/" class="{{ if eq .Section "cv" }}active{{ end }}">CV</a>
-  <a href="/publications/" class="{{ if eq .Section "publications" }}active{{ end }}">Publications</a>
-  <a href="/writing/" class="{{ if or (eq .Section "writing") (eq .Section "essays") }}active{{ end }}">Writing</a>
-  <a href="/contact/" class="{{ if eq .Section "contact" }}active{{ end }}">Contact</a>
-</nav>
+      <a href="/" class="{{ if .IsHome }}active{{ end }}">About</a>
+      <a href="/cv/" class="{{ if eq .Section "cv" }}active{{ end }}">CV</a>
+      <a href="/publications/" class="{{ if eq .Section "publications" }}active{{ end }}">Publications</a>
+      <a href="/writing/" class="{{ if or (eq .Section "writing") (eq .Section "essays") }}active{{ end }}">Writing</a>
+      <a href="/contact/" class="{{ if eq .Section "contact" }}active{{ end }}">Contact</a>
+    </nav>
   </header>
   <main>
     {{ block "main" . }}{{ end }}
   </main>
-<footer>
+  <footer>
     <p>© 2026 Tór Marni Weihe</p>
   </footer>
 </div>
