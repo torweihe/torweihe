@@ -1,94 +1,83 @@
 * { box-sizing: border-box; margin: 0; padding: 0; }
 
-
-/* Novela Black */
 @font-face {
   font-family: "Novela";
-  src: url("Novela-Black.woff2") format("woff2");
-  font-weight: 900;
+  src: url("/Novela-Regular.woff2") format("woff2");
+  font-weight: 400;
   font-style: normal;
-  font-display: optional;
+  font-display: block;
 }
 
-/* Novela Black Italic */
 @font-face {
   font-family: "Novela";
-  src: url("Novela-BlackItalic.woff2") format("woff2");
-  font-weight: 900;
+  src: url("/Novela-RegularItalic.woff2") format("woff2");
+  font-weight: 400;
   font-style: italic;
-  font-display: optional;
+  font-display: block;
 }
 
-/* Novela Bold */
 @font-face {
   font-family: "Novela";
-  src: url("Novela-Bold.woff2") format("woff2");
+  src: url("/Novela-Bold.woff2") format("woff2");
   font-weight: 700;
   font-style: normal;
-  font-display: optional;
+  font-display: block;
 }
 
-/* Novela Bold Italic */
 @font-face {
   font-family: "Novela";
-  src: url("Novela-BoldItalic.woff2") format("woff2");
+  src: url("/Novela-BoldItalic.woff2") format("woff2");
   font-weight: 700;
   font-style: italic;
-  font-display: optional;
+  font-display: block;
 }
 
-/* Novela Semibold */
 @font-face {
   font-family: "Novela";
-  src: url("Novela-Semibold.woff2") format("woff2");
+  src: url("/Novela-Semibold.woff2") format("woff2");
   font-weight: 600;
   font-style: normal;
-  font-display: optional;
+  font-display: block;
 }
 
-/* Novela Semibold Italic */
 @font-face {
   font-family: "Novela";
-  src: url("Novela-SemiboldItalic.woff2") format("woff2");
+  src: url("/Novela-SemiboldItalic.woff2") format("woff2");
   font-weight: 600;
   font-style: italic;
-  font-display: optional;
+  font-display: block;
 }
 
-/* Novela Regular */
 @font-face {
   font-family: "Novela";
-  src: url("Novela-Regular.woff2") format("woff2");
-  font-weight: 400;
+  src: url("/Novela-Black.woff2") format("woff2");
+  font-weight: 900;
   font-style: normal;
-  font-display: optional;
+  font-display: block;
 }
 
-/* Novela Regular Italic */
 @font-face {
   font-family: "Novela";
-  src: url("Novela-RegularItalic.woff2") format("woff2");
-  font-weight: 400;
+  src: url("/Novela-BlackItalic.woff2") format("woff2");
+  font-weight: 900;
   font-style: italic;
-  font-display: optional;
+  font-display: block;
 }
 
-/* Novela Display Regular */
 @font-face {
   font-family: "Novela Display";
-  src: url("Novela-DisplayRegular.woff2") format("woff2");
+  src: url("/Novela-DisplayRegular.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
-  font-display: optional;
+  font-display: block;
 }
 
-/* Novela Display Italic */
 @font-face {
   font-family: "Novela Display";
-  src: url("Novela-DisplayItalic.woff2") format("woff2");
+  src: url("/Novela-DisplayItalic.woff2") format("woff2");
   font-weight: 400;
   font-style: italic;
-  font-display: optional;
+  font-display: block;
 }
 
 :root {
@@ -112,7 +101,7 @@ body {
 }
 
 .site-wrap {
-  max-width: 850px;
+  max-width: 740px;
   margin: 0 auto;
   padding: 0 2rem;
 }
@@ -153,7 +142,6 @@ nav a {
     flex-direction: column;
     gap: 0.5rem;
   }
-
   nav a {
     font-size: 25px;
     font-weight: 500;
@@ -174,8 +162,8 @@ h1 {
   font-style: italic;
   line-height: 1.2;
   margin-bottom: 1.8rem;
-  
 }
+
 h2 {
   font-size: 28px;
   font-weight: 400;
@@ -192,6 +180,11 @@ p {
   line-height: 1.3;
   margin-bottom: 1.1rem;
   font-weight: 400;
+}
+
+p + p {
+  margin-top: 1rem;
+  text-indent: 0;
 }
 
 .lede {
@@ -235,18 +228,17 @@ p {
 
 .pub-title a {
   color: var(--text);
- text-decoration: none;
-  text-decoration-color: var(--rule);
+  text-decoration: none;
 }
 
 .pub-title a:hover {
   color: var(--gold);
 }
 
-.pub-item .pub-title { font-style: italic; font-weight: 500}
+.pub-item .pub-title { font-style: italic; font-weight: 500; }
 .pub-item .pub-meta { color: var(--muted); font-size: 22px; display: block; margin-top: 0.2rem; }
 
-.blog-list { 
+.blog-list {
   list-style: none;
   padding-left: 0;
   margin-left: 0;
@@ -281,14 +273,6 @@ p {
   letter-spacing: 0.04em;
 }
 
-.blog-lang {
-  font-size: 11px;
-  color: var(--muted);
-  letter-spacing: 0.1em;
-  font-variant-caps: small-caps;
-  margin-left: 0.5rem;
-  opacity: 0.7;
-}
 a {
   color: var(--gold);
   text-decoration: none;
@@ -304,7 +288,6 @@ footer {
   margin-top: 4rem;
   padding: 2rem 0 3rem;
   border-top: 0.5px solid var(--rule);
-  font-size: 10px !important;
   color: var(--muted);
 }
 
@@ -336,3 +319,14 @@ ol li::before {
   font-feature-settings: "onum" 1;
 }
 
+ul {
+  padding-left: 2rem;
+  margin: 1.5rem 0;
+}
+
+ul li {
+  font-size: 23px;
+  line-height: 1.6;
+  margin-bottom: 0.4rem;
+  padding-left: 0.5rem;
+}
