@@ -80,6 +80,30 @@
   font-display: block;
 }
 
+@font-face {
+     font-family: "Calendas";
+     src: url("/Calendas-Plus-Regular.woff2") format("woff2");
+     font-weight: 400;
+     font-style: normal;
+     font-display: block;
+}
+
+@font-face {
+  font-family: "Calendas";
+  src: url("/Calendas-Plus-Italic.woff2") format("woff2");
+  font-weight: 400;
+  font-style: italic;
+  font-display: block;
+}
+
+@font-face {
+  font-family: "Calendas";
+  src: url("/Calendas-Plus-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: block;
+}
+
 :root {
   --serif: 'Novela', Georgia, serif;
   --display: 'Novela Display', Georgia, serif;
@@ -334,4 +358,9 @@ ul li {
   line-height: 1.6;
   margin-bottom: 0.4rem;
   padding-left: 0.5rem;
+}
+
+abbr {
+  font-variant-caps: all-small-caps;
+  text-decoration: none;
 }

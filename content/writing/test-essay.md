@@ -4,7 +4,7 @@ subtitle: "The Faroe Islands and North Atlantic Security, 1940–2025"
 author: "Tór Marni Weihe"
 language: "en"
 date: 2026-03-28
-draft: false
+draft: true
 ---
 
 ## Introduction

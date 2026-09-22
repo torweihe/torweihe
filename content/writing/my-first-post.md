@@ -5,7 +5,7 @@ author = "Tór Marni Weihe"
 draft = false
 +++
 
-The Greenland-Iceland-United Kingdom gap — the GIFUK gap — is one of the most strategically significant stretches of ocean in the world. For small states and territories along its edges, the shifting geopolitical currents of the past decade have made it impossible to remain indifferent to questions of security and defence.
+The Greenland-Iceland-United Kingdom gap — the GIUK gap — is one of the most strategically significant stretches of ocean in the world. For small states and territories along its edges, the shifting geopolitical currents of the past decade have made it impossible to remain indifferent to questions of security and defence. The heart of the NATO alliance and the UN General Assembly.
 
 For the Faroe Islands, this is not an abstract question. Faroese waters sit at the heart of the gap. Russian submarine activity has increased markedly since 2014, and the war in Ukraine has accelerated a broader militarisation of the North Atlantic that shows no sign of reversing.
 

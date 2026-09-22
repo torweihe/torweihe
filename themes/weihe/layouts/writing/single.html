@@ -5,7 +5,11 @@
 {{ with .Params.subtitle }}<p class="essay-subtitle">{{ . }}</p>{{ end }}
 <p class="essay-meta"><span style="font-variant-caps: small-caps;">By</span> <em style="font-variant-caps: normal; letter-spacing: 0,02em !important;">{{ .Params.author }}</em> <span style="color: var(--rule); margin: 0 0.6rem;">|</span> {{ .Date.Format "2 January 2006" }}</p>
 <div class="essay-body">
-{{ .Content }}
+{{ $content := .Content }}
+  {{ range hugo.Data.acronyms.list }}
+     {{ $content = replaceRE (printf `\b(%s)(s?)\b` .) `<abbr>$1</abbr>$2` $content }}
+   {{ end }}
+   {{ $content | safeHTML }}
 </div>
 </article>
 <style>
